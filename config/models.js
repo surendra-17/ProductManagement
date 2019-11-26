@@ -70,12 +70,14 @@ module.exports.models = {
 
   attributes: {
     createdAt: {
-      type: 'number',
+      type: 'ref',
       autoCreatedAt: true,
+      columnType: 'timestamp'
     },
     updatedAt: {
-      type: 'number',
-      autoUpdatedAt: true,
+      type: 'ref',
+      autoCreatedAt: true,
+      columnType: 'timestamp'
     },
     id: {
       type: 'number',

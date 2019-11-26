@@ -1,0 +1,24 @@
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="/products/list">Products</a></li>
+  <li class="breadcrumb-item active">Product Edit</li>
+</ol>
+<h1 class="display-4">Edit Product</h1>
+<form action="/product/<%= product.id %>/update" method="post">
+  <div class="form-group">
+    <label for="name" class="control-label">Name</label>
+    <input type="text" name="name" id="name" class="form-control" value="<%= product.name%>">
+  </div>
+  <div class="form-group">
+    <label for="product_code" class="control-label">Product Code</label>
+    <input type="text" name="product_code" id="product_code" class="form-control" value="<%= product.productCode%>">
+  </div>
+  <div class="form-group">
+    <label for="description" class="control-label">Description</label>
+    <textarea name="description" id="description" class="form-control"><%= product.description%></textarea>
+  </div>
+  <div class="form-group">
+    <label for="price" class="control-label">Price</label>
+    <input type="text" name="price" id="price" class="form-control" value="<%= product.price%>">
+  </div>
+  <input type="submit" value="Save" class="btn btn-primary">
+</form>

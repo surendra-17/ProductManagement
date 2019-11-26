@@ -9,47 +9,29 @@ module.exports = {
   tableName: 'products',
   primaryKey: 'id',
   attributes: {
-    name:{
-      type:'string',
-      required:true,
-      columnType:'varchar(100)',
-      columnName:'name'
-    },
-    prductCode:{
-      type:'string',
-      required:true,
-      unique:true,
-      columnName:'product_code'
-    },
-    description:{
-      type:'string',
-      allowNull: true,
-      columnName:'description'
-    },
-    price:{
-      type:'number',
-      required:true,
-      columnType:'FLOAT',
-      columnName:'price'
-    },
-    productImage:{
-      type:'string',
-      allowNull: true,
-      columnName:'product_image'
-    },
-    createdAt: {
+    name: {
       type: 'string',
-      autoCreatedAt: true,
-      columnName: 'created_at',
-      columnType: 'datetime'
+      required: true,
+      columnType: 'varchar(100)',
+      columnName: 'name'
     },
-    updatedAt: {
+    productCode: {
       type: 'string',
-      autoUpdatedAt: true,
-      columnName: 'updated_at',
-      columnType: 'datetime'
+      required: true,
+      unique: true,
+      columnName: 'product_code'
+    },
+    description: {
+      type: 'string',
+      allowNull: true,
+      columnName: 'description'
+    },
+    price: {
+      type: 'number',
+      required: true,
+      columnType: 'FLOAT',
+      columnName: 'price'
     }
   }
 
 };
-
