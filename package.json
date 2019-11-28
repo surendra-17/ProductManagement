@@ -27,9 +27,9 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ergode-an-104/product-management-1.git"
+    "url": "git://github.com/surendra-17/product-management.git"
   },
-  "author": "ergode-an-104",
+  "author": "Surendra Sawant",
   "license": "",
   "engines": {
     "node": "^12.13"
